@@ -1,0 +1,66 @@
+/* src/components/Dashboard.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light background color */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around; /* Space the cards evenly */
+  flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+  margin: 40px auto;
+  max-width: 1200px; /* Center the row with a maximum width */
+}
+
+.card {
+  flex: 1;
+  max-width: 30%; /* Limit the card width to 30% */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-body {
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%; /* Full width for small screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    max-width: 45%; /* Slightly smaller for tablets */
+  }
+}
